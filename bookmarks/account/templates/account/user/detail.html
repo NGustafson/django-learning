@@ -20,7 +20,7 @@
         </span>
         <a href="#" data-id="{{ user.id }}"
            data-action="{% if request.user in user.followers.all %}un{% endif %}follow"
-           class="button">
+           class="follow button">
             {% if request.user not in user.followers.all %}
                 Follow
             {% else %}
@@ -31,4 +31,7 @@
             {% include "images/image/list_images.html" with images=user.images_created.all %}
         </div>
     {% endwith %}
+{% endblock %}
+{% block domready %}
+{% include "account/user_detail.js" %}
 {% endblock %}
