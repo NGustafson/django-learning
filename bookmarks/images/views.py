@@ -5,7 +5,7 @@ from django.http import JsonResponse, HttpResponse
 from django.shortcuts import redirect, render, get_object_or_404
 from django.views.decorators.http import require_POST
 
-from ..actions.utils import create_action
+from actions.utils import create_action
 from .forms import ImageCreateForm
 from .models import Image
 
