@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 15:06+0900\n"
-"PO-Revision-Date: 2024-12-14 12:56+0000\n"
+"POT-Creation-Date: 2024-12-14 22:10+0900\n"
+"PO-Revision-Date: 2024-12-14 13:11+0000\n"
 "Last-Translator:   <admin@mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -100,13 +100,30 @@ msgstr "ご購入手続き"
 msgid "Coupon"
 msgstr "クーポン"
 
-#: myshop/settings.py:114
+#: myshop/settings.py:115
 msgid "English"
 msgstr "英語"
 
-#: myshop/settings.py:115
+#: myshop/settings.py:116
 msgid "Japanese"
 msgstr "日本語"
+
+#: myshop/urls.py:28
+msgid "cart/"
+msgstr ""
+
+#: myshop/urls.py:29
+msgid "orders/"
+msgstr ""
+
+#: myshop/urls.py:30
+msgid "payment/"
+msgstr ""
+
+#: myshop/urls.py:31
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr ""
 
 #: payment/templates/payment/canceled.html:3
 msgid "Payment Canceled"
@@ -151,6 +168,18 @@ msgstr ""
 #: payment/templates/payment/process.html:59
 msgid "Pay Now"
 msgstr "今すぐ払います"
+
+#: payment/urls.py:9
+msgid "process/"
+msgstr ""
+
+#: payment/urls.py:10
+msgid "completed/"
+msgstr ""
+
+#: payment/urls.py:11
+msgid "canceled/"
+msgstr ""
 
 #: shop/templates/shop/base.html:6 shop/templates/shop/base.html:11
 msgid "My Shop"
