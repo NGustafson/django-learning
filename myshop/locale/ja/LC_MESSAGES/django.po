@@ -8,15 +8,98 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-29 21:08+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-12-14 15:06+0900\n"
+"PO-Revision-Date: 2024-12-14 12:56+0000\n"
+"Last-Translator:   <admin@mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: cart/forms.py:11 cart/templates/cart/detail.html:13
+#: payment/templates/payment/process.html:12
+msgid "Quantity"
+msgstr "数量"
+
+#: cart/templates/cart/detail.html:4 cart/templates/cart/detail.html:7
+msgid "Your Shopping Cart"
+msgstr "買い物かご"
+
+#: cart/templates/cart/detail.html:11 payment/templates/payment/process.html:9
+msgid "Image"
+msgstr "画像"
+
+#: cart/templates/cart/detail.html:12
+#: payment/templates/payment/process.html:10
+msgid "Product"
+msgstr "商品"
+
+#: cart/templates/cart/detail.html:14 cart/templates/cart/detail.html:40
+msgid "Remove"
+msgstr "削除"
+
+#: cart/templates/cart/detail.html:15
+msgid "Unit"
+msgstr "ユニット"
+
+#: cart/templates/cart/detail.html:16
+#: payment/templates/payment/process.html:11
+msgid "Price"
+msgstr "値段"
+
+#: cart/templates/cart/detail.html:34
+msgid "Update"
+msgstr "アップデート"
+
+#: cart/templates/cart/detail.html:51
+#: payment/templates/payment/process.html:31
+msgid "Subtotal"
+msgstr "小計"
+
+#: cart/templates/cart/detail.html:57
+#, python-format
+msgid ""
+"\n"
+"                            \"%(code)s\" coupon (%(discount)s%% off)\n"
+"                        "
+msgstr ""
+"\n"
+"\"%(code)\"クーポン (%(discount)s%% 割引)"
+
+#: cart/templates/cart/detail.html:68
+#: payment/templates/payment/process.html:13
+#: payment/templates/payment/process.html:50
+msgid "Total"
+msgstr "合計"
+
+#: cart/templates/cart/detail.html:76
+#: shop/templates/shop/product/detail.html:25
+msgid "People who bought this also bought"
+msgstr "この商品を買った人は、こんな商品にも興味をもっています"
+
+#: cart/templates/cart/detail.html:88
+msgid "Apply a coupon"
+msgstr "このクーポンを使う"
+
+#: cart/templates/cart/detail.html:91
+msgid "Apply"
+msgstr "使う"
+
+#: cart/templates/cart/detail.html:95
+msgid "Continue Shopping"
+msgstr "買い物を続きます"
+
+#: cart/templates/cart/detail.html:96
+msgid "Checkout"
+msgstr "ご購入手続き"
+
+#: coupons/forms.py:6
+msgid "Coupon"
+msgstr "クーポン"
+
 #: myshop/settings.py:114
 msgid "English"
 msgstr "英語"
@@ -24,3 +107,88 @@ msgstr "英語"
 #: myshop/settings.py:115
 msgid "Japanese"
 msgstr "日本語"
+
+#: payment/templates/payment/canceled.html:3
+msgid "Payment Canceled"
+msgstr "支払いキャンセルされました"
+
+#: payment/templates/payment/canceled.html:5
+msgid "Your payment has not been processed"
+msgstr "支払いに問題がありました"
+
+#: payment/templates/payment/canceled.html:6
+msgid "There was a problem processing your payment."
+msgstr "支払いに問題がありました。"
+
+#: payment/templates/payment/completed.html:3
+msgid "Payment Successful"
+msgstr "支払い済み"
+
+#: payment/templates/payment/completed.html:5
+msgid "Your Payment was Successful"
+msgstr "支払いは処理しました"
+
+#: payment/templates/payment/completed.html:6
+msgid "Your payment has been processed successfully."
+msgstr "支払いは処理しました。"
+
+#: payment/templates/payment/process.html:3
+msgid "Pay Your Order"
+msgstr "今すぐ払います"
+
+#: payment/templates/payment/process.html:5
+msgid "Order Summary"
+msgstr "注文情報"
+
+#: payment/templates/payment/process.html:39
+#, python-format
+msgid ""
+"\n"
+"                            \"%(code)s (%(discount)s%% off)\n"
+"                        "
+msgstr ""
+
+#: payment/templates/payment/process.html:59
+msgid "Pay Now"
+msgstr "今すぐ払います"
+
+#: shop/templates/shop/base.html:6 shop/templates/shop/base.html:11
+msgid "My Shop"
+msgstr "私の店"
+
+#: shop/templates/shop/base.html:17
+msgid "Your Cart"
+msgstr "買い物かご"
+
+#: shop/templates/shop/base.html:19
+#, python-format
+msgid ""
+"\n"
+"                                %(items)s item, $%(total)s\n"
+"                            "
+msgid_plural ""
+"\n"
+"                                %(items)s items, $%(total)s\n"
+"                            "
+msgstr[0] ""
+
+#: shop/templates/shop/base.html:26
+msgid "Your cart is empty."
+msgstr "現在、買い物かごには商品が入っていません"
+
+#: shop/templates/shop/product/detail.html:20
+msgid "Add to cart"
+msgstr "商品をかごに追加"
+
+#: shop/templates/shop/product/list.html:4
+#: shop/templates/shop/product/list.html:22
+msgid "Products"
+msgstr "商品"
+
+#: shop/templates/shop/product/list.html:8
+msgid "Categories"
+msgstr "ジャンル"
+
+#: shop/templates/shop/product/list.html:11
+msgid "All"
+msgstr "全部"
