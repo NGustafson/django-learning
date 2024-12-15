@@ -15,6 +15,7 @@ from pathlib import Path
 import django.conf.global_settings
 from django.utils.translation import gettext_lazy as _
 from decouple import config
+from parler.appsettings import PARLER_LANGUAGES
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'coupons.apps.CouponsConfig',
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -118,6 +120,18 @@ LANGUAGES = [
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
+
+# django-parler settings
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'ja'},
+    ),
+    'default': {
+        'fallbacks': ['en'],
+        'hide_untranslated': False,
+    }
+}
 
 TIME_ZONE = 'UTC'
 
