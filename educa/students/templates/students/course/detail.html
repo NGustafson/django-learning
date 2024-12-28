@@ -30,6 +30,8 @@
                 <h2>{{ item.title }}</h2>
                 {{ item.render }}
             {% endwith %}
+        {% empty %}
+            No content yet.
         {% endfor %}
     </div>
 {% endblock %}

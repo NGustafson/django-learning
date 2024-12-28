@@ -24,7 +24,7 @@ urlpatterns = [
         name='student_course_detail',
     ),
     path(
-        'course/<pk>/module_id/',
+        'course/<pk>/<module_id>/',
         views.StudentCourseDetailView.as_view(),
         name='student_course_detail_module',
     ),
