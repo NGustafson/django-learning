@@ -152,3 +152,5 @@ CHANNEL_LAYERS = {
         }
     }
 }
+
+MAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
