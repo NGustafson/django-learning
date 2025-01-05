@@ -6,7 +6,7 @@
 	<div id="chat">
         {% for message in latest_messages %}
         	<div class="message {% if message.user == request.user %}
-                me{% else %}other{% endif %}">
+                me{% else %}other{% endif %}"></div>
                 <strong>{{ message.user.username }}</strong>
                 <span class="date">
                     {{ mesage.sent_on|date:"Y.m.d H:i A" }}
@@ -33,7 +33,7 @@
     const requestUser = JSON.parse(
         document.getElementById('request-user').textContent
     );
-    const url = 'ws://' + window.location.host +
+    const url = 'wss://' + window.location.host +
                 '/ws/chat/room/' + courseId + '/';
     const chatSocket = new WebSocket(url);
 
