@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-#import projects.views
+import projects.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('projects/', include('projects.urls', namespace='projects')),
     path('tasks/', include('tasks.urls', namespace='tasks')),
-    #path('', projects.views.home_dashboard, name='home_dashboard'),
+    path('', projects.views.home_dashboard, name='home_dashboard'),
 ]

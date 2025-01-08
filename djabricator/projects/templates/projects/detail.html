@@ -5,4 +5,7 @@
 {% block content %}
 	<h1>{{ project.name }}</h1>
     <span>{{ project.description }}</span>
+    {% if project.workboard %}
+    	<a href="{% url 'projects:project_workboard' project.id %}">Workboard</a>
+    {% endif %}
 {% endblock %}
