@@ -3,19 +3,19 @@
     Workboard for {{ workboard.project.name }}
 {% endblock %}
 {% block content %}
-    <h1>Workboard</h1>
-    <div class="workboard">
+    <div class="flex space-x-4 p-4">
         {% for column, task_assignments in tasks_by_column.items %}
-            <h4>{{ column.name }}</h4>
-            <ul>
-                {% for assignment in task_assignments %}
-                    <li>
-                        <a href="{% url 'tasks:task_detail' assignment.task.id %}">{{ assignment.task }}</a>
-                    </li>
-                {% empty %}
-                    <li>No Tasks</li>
-                {% endfor %}
-            </ul>
+            <div class="flex-shrink-0 bg-gray-100 p-4 rounded shadow w-100">
+                <h2 class="text-lg font-bold mb-4">{{ column.name }}</h2>
+                <div class="space-y-2">
+                    {% for assignment in task_assignments %}
+                        <div class="p-4 bg-white rounded shadow"><a
+                                href="{% url 'tasks:task_detail' assignment.task.id %}">{{ assignment.task }}</a></div>
+                    {% empty %}
+                        No Tasks
+                    {% endfor %}
+                </div>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}

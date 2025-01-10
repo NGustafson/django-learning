@@ -1,11 +1,23 @@
 {% extends 'projects/base.html' %}
 {% block title %}
-	{{ project.name }}
+    {{ project.name }}
+{% endblock %}
+{% block sidebar_content %}
+    <a href="{% url 'projects:project_detail' project.id %}" class="flex items-center ps-2.5 mb-5">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{{ project.name }}</span>
+    </a>
+    <ul class="space-y-2 font-medium">
+        {% if project.workboard %}
+            <li>
+                <a href="{% url 'projects:project_workboard' project.id %}"
+                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <span class="ms-3">Workboard</span>
+                </a>
+            </li>
+        {% endif %}
+    </ul>
 {% endblock %}
 {% block content %}
-	<h1>{{ project.name }}</h1>
+    <h1>{{ project.name }}</h1>
     <span>{{ project.description }}</span>
-    {% if project.workboard %}
-    	<a href="{% url 'projects:project_workboard' project.id %}">Workboard</a>
-    {% endif %}
 {% endblock %}

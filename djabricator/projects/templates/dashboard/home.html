@@ -1,15 +1,30 @@
 {% extends 'projects/base.html' %}
 {% block title %}
-	Djabricator
+    Djabricator
 {% endblock %}
-{% block content %}
-	<h4>Applications</h4>
-    <ul>
+{% block sidebar_content %}
+    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Applications</span>
+    <ul class="space-y-2 font-medium">
         <li>
-            <a href="{% url 'projects:projects_list' %}">Projects</a>
+            <a href="{% url 'home_dashboard' %}"
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <span class="ms-3">Home</span>
+            </a>
         </li>
         <li>
-            <a href="{% url 'tasks:tasks_list' %}">Tasks</a>
+            <a href="{% url 'projects:projects_list' %}"
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <span class="flex-1 ms-3 whitespace-nowrap">Projects</span>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'tasks:tasks_list' %}"
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <span class="flex-1 ms-3 whitespace-nowrap">Tasks</span>
+            </a>
         </li>
     </ul>
+{% endblock %}
+{% block content %}
+    <h4>Home Dashboard</h4>
 {% endblock %}
